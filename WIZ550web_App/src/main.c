@@ -94,7 +94,7 @@ int g_sdcard_done = 0;
 // Blynk Client Settings //
 ///////////////////////////
 #define SOCK_BLYNK_CLIENT		7
-uint8_t auth[] = "0093bb590e9d40429d3818090a852ca9";	// You should get Auth Token in the Blynk App
+uint8_t auth[] = "Your Blynk App Auth Token";	// You should get Auth Token in the Blynk App
 uint8_t blynk_server_ip[4] = {45, 55, 195, 102};		// Blynk cloud server IP (cloud.blynk.cc, 8422)
 
 
