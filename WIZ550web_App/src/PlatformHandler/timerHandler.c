@@ -27,6 +27,11 @@ void TIM2_IRQHandler(void)
 		TIM_ClearFlag(TIM2, TIM_FLAG_Update);
 		TIM_ClearITPendingBit(TIM2, TIM_IT_Update); // Clear the interrupt flag
 
+		////////////////////////////////////////////////////////
+		// SHOULD BE Added Blynk Time Handler to your 1ms tick timer
+		blynk_time_handler(); 	// for Blynk client time counter
+		////////////////////////////////////////////////////////
+
 		//Todo
 		msec_cnt++; // milli second
 		if(msec_cnt >= 1000 - 1) // second
